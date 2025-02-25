@@ -57,7 +57,7 @@ export default function SignUp() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md space-y-8">
         <div className="text-center">
           <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-3 sm:mb-4 border border-primary/20">
-            Join SupaAuth 🚀
+            Join SupaAuth ��
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-text">Create your account</h2>
           <p className="mt-2 text-sm text-text-secondary">Start building your first full-stack app today</p>

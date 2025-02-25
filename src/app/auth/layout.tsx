@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { ReactNode } from '@/types'
+import Image from 'next/image'
 
 interface AuthLayoutProps {
   children: ReactNode

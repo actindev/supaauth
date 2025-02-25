@@ -1,4 +1,4 @@
-# SupaAuth
+# create-next-supaauth
 
 <div align="center">
 
@@ -13,6 +13,8 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
 [![PNPM](https://img.shields.io/badge/PNPM-orange?style=flat&logo=pnpm&logoColor=white)](https://pnpm.io/)
 
 </div>
+
+> **Note:** `create-next-supaauth` is the package name for installation, while "SupaAuth" is the application name that users will see.
 
 ## ✨ Features
 
@@ -36,8 +38,8 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/supa-starter.git
-   cd supa-starter
+   git clone https://github.com/Gitmaxd/create-next-supaauth.git
+   cd create-next-supaauth
    ```
 
 2. Install dependencies:
@@ -123,8 +125,8 @@ We welcome contributions! Here's how you can help:
 ## 💬 Support
 
 - 📚 [Supabase Documentation](https://supabase.io/docs)
-- 🐛 [Issue Tracker](https://github.com/yourusername/supa-starter/issues)
-- 💡 [Discussions](https://github.com/yourusername/supa-starter/discussions)
+- 🐛 [Issue Tracker](https://github.com/Gitmaxd/create-next-supaauth/issues)
+- 💡 [Discussions](https://github.com/Gitmaxd/create-next-supaauth/discussions)
 
 ## 📄 License
 

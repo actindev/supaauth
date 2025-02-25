@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import type { ReactNode } from '@/types'
+import Image from 'next/image'
 
 interface AuthLayoutProps {
   children: ReactNode
@@ -13,9 +14,16 @@ export default function AuthLayout({ children, title, subtitle }: AuthLayoutProp
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="h-20 flex items-center px-4 border-b bg-white">
-        <Link href="/" className="text-2xl font-bold">
-          SupaAuth
-        </Link>
+        <div className="flex items-center gap-2">
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+            width={24}
+            height={24}
+            className="w-5 h-5"
+          />
+          <span className="text-text font-medium">SupaAuth</span>
+        </div>
       </header>
 
       <main className="flex-1 flex items-center justify-center p-4">

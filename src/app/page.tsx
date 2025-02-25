@@ -33,7 +33,7 @@ export default function Home() {
               From Zero to Auth<br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-[#6D5AE6] via-[#4A8CFF] to-[#6BA1FF] text-transparent bg-clip-text">In Under 1 Minute</span>
             </h1>
-            <p className="mx-auto mt-3 max-w-md text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary font-normal leading-relaxed sm:mt-5 md:max-w-3xl">
+            <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">
               SupaAuth bridges the gap between no-code and code. Get production-ready authentication without the complexity. Perfect for your first full-stack app.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="mt-8 sm:mt-12 text-center px-4 sm:px-0">
             <p className="text-xs sm:text-sm text-text-secondary font-normal mb-3 sm:mb-4">Yes, it&apos;s really this simple:</p>
             <div className="bg-background-dark text-text-secondary p-3 sm:p-4 rounded-lg inline-block text-left w-full sm:w-auto overflow-x-auto border border-primary">
-              <code className="text-sm sm:text-base whitespace-nowrap font-mono">npx create-supaauth my-app</code>
+              <code className="text-sm sm:text-base whitespace-nowrap font-mono">npx create-next-supaauth my-app</code>
             </div>
             <p className="mt-4 text-sm sm:text-base text-primary/80 font-medium">
               <span className="inline-block gradient-border p-2 sm:p-2.5 group hover:scale-[1.02] transition-transform duration-300">

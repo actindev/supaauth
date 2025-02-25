@@ -17,7 +17,7 @@
     --color-accent: #1E1B2E;
     --color-accent-dark: #17152A;
     --color-accent-light: #252236;
-    --card-bg: #1A1A1A;
+    --card-bg: #0A0C14;
     --card-container-bg: #151515;
   }
 
@@ -111,7 +111,7 @@
 
   /* Container for "How It Works" section */
   .dark-container {
-    background: var(--card-container-bg);
+    background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.75rem;
   }

@@ -45,7 +45,16 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(to right, #6D5AE6, #4A8CFF)',
-      }
+      },
+      animation: {
+        'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
+      },
+      keyframes: {
+        'pulse-subtle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.85' },
+        },
+      },
     },
   },
   plugins: [],

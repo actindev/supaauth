@@ -30,10 +30,10 @@ export default function Header() {
           </div>
 
           {/* Right side container with social links and auth buttons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/Gitmaxd/create-next-supaauth"
+                href="https://github.com/Gitmaxd/supaauth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text/80 hover:text-text transition-colors duration-200"
@@ -63,6 +63,7 @@ export default function Header() {
                 </svg>
               </a>
             </div>
+            <div className="h-6 w-px bg-border/50 mx-1"></div>
             <AuthButtons />
           </div>
         </div>

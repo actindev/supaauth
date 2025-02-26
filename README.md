@@ -14,11 +14,9 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
 
 </div>
 
-> **Note:** `create-next-supaauth` is the package name for installation, while "SupaAuth" is the application name that users will see.
-
 ## ✨ Features
 
-- 🔐 Complete authentication system with email/password
+- 🔐 Complete Server-Side authentication system with email/password
 - 🚀 Server-side rendering with Next.js
 - 🎨 Modern UI with Tailwind CSS
 - 📱 Fully responsive design

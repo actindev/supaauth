@@ -1,22 +1,101 @@
+# This .gitignore file is optimized ensuring that:
+# No sensitive data is accidentally committed
+# Repository size is kept minimal by excluding build artifacts and dependencies
+# Personal IDE settings don't interfere with other contributors
+# System-specific files don't pollute the repository
+# The file is also future-proofed with patterns for common tools in the Next.js ecosystem that you might adopt as your project grows.
+
+# Next.js & Build Output
+.next/
+out/
+build/
+dist/
+.vercel/
+.turbo/
+
 # Dependencies
 node_modules/
+/.pnp
+.pnp.js
+.pnpm-store/
+.yarn/
 
-# Next.js build output
-.next/
-
-# Local env files
+# Environment Variables & Secrets
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
 
-# Distribution folder
-dist/
+# Testing
+/coverage
+.nyc_output
+junit.xml
 
-# MacOS files
-.DS_Store
-
-# Logs
+# Debug & Logs
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+*.log
+
+# IDE & Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+._*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+.cache/
+.temp/
+.tmp/
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# Supabase
+.supabase/
+
+# PWA
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# Storybook
+storybook-static/
+
+# Generated files
+.docusaurus
+.cache-loader
+
+# Debug
+.debug/
+debug/

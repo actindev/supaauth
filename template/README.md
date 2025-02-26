@@ -20,6 +20,7 @@
 ### Ready to try it? Deploy now in seconds!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Gitmaxd/supaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables)
 
 </div>
 
@@ -88,7 +89,32 @@ You can deploy this project directly to Vercel with the following steps:
   <br /><br />
 </div>
 
-Your application will be deployed and accessible through a Vercel URL. You can then configure custom domains and other settings in your Vercel dashboard.
+### Deploy to Netlify
+
+You can also deploy this project directly to Netlify with these simple steps:
+
+1. Create a Supabase project at [https://supabase.com](https://supabase.com) if you haven't already.
+
+2. Get your Supabase URL and anon key from your Supabase project dashboard.
+
+3. Click the "Deploy to Netlify" button at the top of this README or use the button below.
+
+4. In the Netlify deployment form, enter your Supabase credentials:
+   - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase project anon/public key
+
+5. Click "Save & Deploy" and wait for the deployment to complete.
+
+<div align="center">
+  <br />
+  <p><strong>Ready to deploy? Click the button below:</strong></p>
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Gitmaxd/supaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables">
+    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
+  </a>
+  <br /><br />
+</div>
+
+Your application will be deployed and accessible through a Vercel or Netlify URL. You can then configure custom domains and other settings in your respective dashboard.
 
 ## Environment Variables
 

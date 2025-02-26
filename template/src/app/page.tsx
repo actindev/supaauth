@@ -26,22 +26,22 @@ export default function Home() {
         {/* Hero Section - Enhanced Mobile */}
         <div className="py-6 sm:py-8">
           <div className="text-center">
-            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-3 sm:mb-4 border border-primary/20">
-              Perfect for New Developers 👋
+            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-xs sm:text-sm font-medium mb-3 sm:mb-4 border border-primary/20">
+              <span className="bg-gradient-to-r from-white via-gray-200 to-white text-transparent bg-clip-text">Perfect for New Developers 👋</span>
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text">
-              From Zero to Auth<br className="hidden sm:block" />
+              From Zero to Auth<br className="block sm:hidden" />
               <span className="bg-gradient-to-r from-[#6D5AE6] via-[#4A8CFF] to-[#6BA1FF] text-transparent bg-clip-text">In Under 1 Minute</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">
-              SupaAuth bridges the gap between no-code and code. Get production-ready authentication without the complexity. Perfect for your first full-stack app.
+              SupaAuth Starter accelerates your path from idea to production. Launch with battle-tested authentication, database, and UI components ready to ship. Perfect for developers who want to build and deploy full-stack apps faster.
             </p>
           </div>
           
           {/* Quick Start Preview - Mobile Friendly */}
           <div className="mt-8 sm:mt-12 text-center px-4 sm:px-0">
             <p className="text-xs sm:text-sm text-text-secondary font-normal mb-3 sm:mb-4">Yes, it&apos;s really this simple:</p>
-            <div className="bg-background-dark text-text-secondary p-3 sm:p-4 rounded-lg inline-block text-left w-full sm:w-auto overflow-x-auto border border-primary">
+            <div className="bg-background-dark text-text-secondary p-3 sm:p-4 rounded-lg inline-block text-center sm:text-left w-full sm:w-auto overflow-x-auto border border-primary">
               <code className="text-sm sm:text-base whitespace-nowrap font-mono">npx create-next-supaauth my-app</code>
             </div>
             <p className="mt-4 text-sm sm:text-base font-medium">
@@ -80,7 +80,7 @@ export default function Home() {
             <FeatureCard
               icon={<Lock className="w-5 h-5 sm:w-6 sm:h-6" />}
               title="Production Ready"
-              description="Built on Supabase. The same auth system used by real companies. No need to rebuild later."
+              description="Built on Supabase. The same auth system used by real companies. No need to reinvent the wheel."
             />
           </div>
         </div>

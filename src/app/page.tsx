@@ -34,7 +34,7 @@ export default function Home() {
               <span className="bg-gradient-to-r from-[#6D5AE6] via-[#4A8CFF] to-[#6BA1FF] text-transparent bg-clip-text">In Under 1 Minute</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">
-              Build full-stack apps faster with SupaAuth. Ready-made authentication, database, and UI components that save you time. Perfect for new developers shipping their first web app.
+              Jumpstart your Next.js app with the Supabase Authentication Suite. Get up and running in seconds with a complete auth system built for beginners.
             </p>
           </div>
           
@@ -48,7 +48,7 @@ export default function Home() {
               <span className="inline-block gradient-border p-2 sm:p-2.5 group hover:scale-[1.02] transition-transform duration-300">
                 <span className="flex items-center gap-2">
                   <span role="img" aria-label="eyes">👀</span>
-                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold animate-pulse-subtle">You&apos;re looking at the demo right now! This is what you&apos;ll get.</span>
+                  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-semibold animate-pulse-subtle">You&apos;re looking at the demo right now!</span>
                 </span>
               </span>
             </p>
@@ -123,7 +123,7 @@ export default function Home() {
               href="/auth/signup"
               className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-md bg-card-bg gradient-border hover:text-text transition-all duration-300 w-full sm:w-auto justify-center group"
             >
-              <span>Get Started</span>
+              <span>Try it now!</span>
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-300" />
             </Link>
           </div>

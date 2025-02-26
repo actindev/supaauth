@@ -16,6 +16,12 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![npm version](https://img.shields.io/npm/v/create-next-supaauth.svg?style=flat)](https://www.npmjs.com/package/create-next-supaauth)
 
+<br />
+
+### Ready to try it? Deploy now in seconds!
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables)
+
 </div>
 
 ## ✨ Features
@@ -58,6 +64,44 @@
    ```
 
 Visit `http://localhost:3000` to see your app in action! 🎉
+
+### Deploy to Vercel
+
+You can deploy this project directly to Vercel with the following steps:
+
+1. Create a Supabase project at [https://supabase.com](https://supabase.com) if you haven't already.
+
+2. Get your Supabase URL and anon key from your Supabase project dashboard.
+
+3. Click the "Deploy to Vercel" button at the top of this README or use the button below.
+
+4. In the Vercel deployment form, enter your Supabase credentials:
+   - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase project anon/public key
+
+5. Click "Deploy" and wait for the deployment to complete.
+
+<div align="center">
+  <br />
+  <p><strong>Ready to deploy? Click the button below:</strong></p>
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+  <br /><br />
+</div>
+
+Your application will be deployed and accessible through a Vercel URL. You can then configure custom domains and other settings in your Vercel dashboard.
+
+## Environment Variables
+
+This project requires the following environment variables to function properly:
+
+| Variable | Description | Where to Find |
+|----------|-------------|--------------|
+| `NEXT_PUBLIC_SUPABASE_URL` | The URL of your Supabase project | Supabase Dashboard → Project Settings → API → Project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | The anonymous key for your Supabase project | Supabase Dashboard → Project Settings → API → Project API Keys → anon/public |
+
+These variables are necessary for the authentication system to communicate with your Supabase backend.
 
 ## 📖 For Beginners
 

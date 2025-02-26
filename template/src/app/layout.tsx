@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' })
 export const metadata: Metadata = {
   title: 'SupaAuth - Authentication Made Simple',
   description: 'Get started with authentication in minutes',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
 }
 
 export default function RootLayout({

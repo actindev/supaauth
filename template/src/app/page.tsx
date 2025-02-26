@@ -34,7 +34,7 @@ export default function Home() {
               <span className="bg-gradient-to-r from-[#6D5AE6] via-[#4A8CFF] to-[#6BA1FF] text-transparent bg-clip-text">In Under 1 Minute</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">
-              SupaAuth Starter accelerates your path from idea to production. Launch with battle-tested authentication, database, and UI components ready to ship. Perfect for developers who want to build and deploy full-stack apps faster.
+              Build full-stack apps faster with SupaAuth. Ready-made authentication, database, and UI components that save you time. Perfect for new developers shipping their first web app.
             </p>
           </div>
           

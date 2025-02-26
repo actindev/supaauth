@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://github.com/Gitmaxd/supaauth/blob/main/public/supaauth-hero.png?raw=true" alt="SupaAuth - From Zero to Auth in Under 1 Minute" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+<img src="https://raw.githubusercontent.com/Gitmaxd/supaauth/main/public/supaauth-hero.png" alt="SupaAuth - From Zero to Auth in Under 1 Minute" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
 
 <br /><br />
 

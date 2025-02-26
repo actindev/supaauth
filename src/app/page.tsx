@@ -42,7 +42,7 @@ export default function Home() {
           <div className="mt-8 sm:mt-12 text-center px-4 sm:px-0">
             <p className="text-xs sm:text-sm text-text-secondary font-normal mb-3 sm:mb-4">Yes, it&apos;s really this simple:</p>
             <div className="bg-background-dark text-text-secondary p-3 sm:p-4 rounded-lg inline-block text-left w-full sm:w-auto overflow-x-auto border border-primary">
-              <code className="text-sm sm:text-base whitespace-nowrap font-mono">npx create-next-supaauth my-app</code>
+              <code className="text-sm sm:text-base whitespace-nowrap font-mono">npx create-next-app my-app -e https://github.com/Gitmaxd/supaauth</code>
             </div>
             <p className="mt-4 text-sm sm:text-base text-primary/80 font-medium">
               <span className="inline-block gradient-border p-2 sm:p-2.5 group hover:scale-[1.02] transition-transform duration-300">

@@ -4,7 +4,11 @@
 
 <img src="https://raw.githubusercontent.com/Gitmaxd/supaauth/main/public/supaauth-hero.png" alt="SupaAuth - From Zero to Auth in Under 1 Minute" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
 
-<br /><br />
+<br />
+
+<h3><a href="https://supaauth.com" target="_blank">View SupaAuth.com for a live demo</a></h3>
+
+<br />
 
 ## A modern, type-safe authentication boilerplate built with Next.js 14 and Supabase.
 

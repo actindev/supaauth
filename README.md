@@ -2,9 +2,13 @@
 
 <div align="center">
 
-![SupaAuth Logo](https://via.placeholder.com/150)
+<img src="https://raw.githubusercontent.com/Gitmaxd/supaauth/main/public/supaauth-hero.png" alt="SupaAuth - From Zero to Auth in Under 1 Minute" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
 
-A modern, type-safe authentication boilerplate built with Next.js 14 and Supabase.
+<br /><br />
+
+## A modern, type-safe authentication boilerplate built with Next.js 14 and Supabase.
+
+<br />
 
 [![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.io/)
@@ -115,8 +119,8 @@ We welcome contributions! Here's how you can help:
 ## 💬 Support
 
 - 📚 [Supabase Documentation](https://supabase.io/docs)
-- 🐛 [Issue Tracker](https://github.com/Gitmaxd/create-next-supaauth/issues)
-- 💡 [Discussions](https://github.com/Gitmaxd/create-next-supaauth/discussions)
+- 🐛 [Issue Tracker](https://github.com/Gitmaxd/supaauth/issues)
+- 💡 [Discussions](https://github.com/Gitmaxd/supaauth/discussions)
 
 ## 📄 License
 

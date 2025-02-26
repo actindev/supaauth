@@ -77,8 +77,8 @@ export default function ResetPassword() {
     <div className="flex-1 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md space-y-8">
         <div className="text-center">
-          <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-3 sm:mb-4 border border-primary/20">
-            Reset Your Password
+          <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-primary/10 text-xs sm:text-sm font-medium mb-3 sm:mb-4 border border-primary/20">
+            <span className="bg-gradient-to-r from-white via-gray-200 to-white text-transparent bg-clip-text">Reset Your Password</span>
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-text">Set a new password</h2>
           <p className="mt-2 text-sm text-text-secondary">Secure your account with a new password</p>

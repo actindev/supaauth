@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gitmaxd/create-next-supaauth.git"
+    "url": "git+https://github.com/Gitmaxd/supaauth.git"
   },
   "bugs": {
-    "url": "https://github.com/Gitmaxd/create-next-supaauth/issues"
+    "url": "https://github.com/Gitmaxd/supaauth/issues"
   },
-  "homepage": "https://github.com/Gitmaxd/create-next-supaauth#readme",
+  "homepage": "https://supaauth.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

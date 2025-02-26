@@ -1,38 +1,22 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+# Dependencies
+node_modules/
 
-# testing
-/coverage
+# Next.js build output
+.next/
 
-# next.js
-/.next/
-/out/
+# Local env files
+.env
+.env.local
+.env.*.local
 
-# production
-/build
+# Distribution folder
+dist/
 
-# misc
+# MacOS files
 .DS_Store
-*.pem
 
-# debug
+# Logs
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts 
-
-# pnpm
-pnpm-lock.yaml
-   .pnpm-store/

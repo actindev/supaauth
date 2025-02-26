@@ -30,21 +30,19 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
 ## 🚀 Quick Start
 
 ### Prerequisites
-
 - Node.js 16 or higher
-- PNPM package manager
+- PNPM (or npm/yarn if you prefer)
 
 ### Installation
 
-1. Clone the repository:
+1. Create a new project with one command:
    ```bash
-   git clone https://github.com/Gitmaxd/create-next-supaauth.git
-   cd create-next-supaauth
+   npx create-next-app my-new-app -e https://github.com/Gitmaxd/create-next-supaauth
    ```
 
-2. Install dependencies:
+2. Navigate to your project:
    ```bash
-   pnpm install
+   cd my-new-app
    ```
 
 3. Set up environment variables:
@@ -57,7 +55,12 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
    ```
 
-4. Start the development server:
+4. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+5. Start the development server:
    ```bash
    pnpm dev
    ```

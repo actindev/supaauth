@@ -30,7 +30,7 @@ export default function Home() {
               <span className="bg-gradient-to-r from-white via-gray-200 to-white text-transparent bg-clip-text">Perfect for New Developers 👋</span>
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-text">
-              From Zero to Auth<br className="block sm:hidden" />
+              From Zero to Auth<br />
               <span className="bg-gradient-to-r from-[#6D5AE6] via-[#4A8CFF] to-[#6BA1FF] text-transparent bg-clip-text">In Under 1 Minute</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">

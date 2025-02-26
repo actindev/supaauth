@@ -41,13 +41,10 @@ try {
     throw new Error('Template directory not found. This is likely an issue with the package installation.');
   }
 
-  // Create .env.local file
-  console.log('Creating environment file...');
+  // Note about environment setup
+  console.log('Environment setup...');
   if (fs.existsSync(path.join(projectDir, '.env.example'))) {
-    fs.copyFileSync(
-      path.join(projectDir, '.env.example'),
-      path.join(projectDir, '.env.local')
-    );
+    console.log('An .env.example file is available in your project. You will need to create your own .env.local file based on this example.');
   } else {
     console.warn('Warning: .env.example file not found. You will need to create your own .env.local file.');
   }
@@ -61,7 +58,7 @@ try {
   console.log('');
   console.log('Next steps:');
   console.log(`1. cd ${projectName}`);
-  console.log('2. Update your .env.local with your Supabase credentials');
+  console.log('2. Create a .env.local file based on .env.example and add your Supabase credentials');
   console.log('3. npm run dev');
   console.log('');
   console.log('Happy coding! 🚀');

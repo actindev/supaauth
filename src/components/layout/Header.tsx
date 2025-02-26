@@ -33,7 +33,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/Gitmaxd/supaauth"
+                href="https://github.com/Gitmaxd/create-next-supaauth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text/80 hover:text-text transition-colors duration-200"

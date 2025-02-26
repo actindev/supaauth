@@ -1,4 +1,4 @@
-# supaauth
+# create-next-supaauth
 
 <div align="center">
 
@@ -35,7 +35,7 @@ A modern, type-safe authentication boilerplate built with Next.js and Supabase.
 
 1. Create a new project with one command:
    ```bash
-   npx create-next-app my-new-app -e https://github.com/Gitmaxd/supaauth
+   npx create-next-app my-new-app -e https://github.com/Gitmaxd/create-next-supaauth
    ```
 
 2. Navigate to your project:
@@ -126,8 +126,8 @@ We welcome contributions! Here's how you can help:
 ## 💬 Support
 
 - 📚 [Supabase Documentation](https://supabase.io/docs)
-- 🐛 [Issue Tracker](https://github.com/Gitmaxd/supaauth/issues)
-- 💡 [Discussions](https://github.com/Gitmaxd/supaauth/discussions)
+- 🐛 [Issue Tracker](https://github.com/Gitmaxd/create-next-supaauth/issues)
+- 💡 [Discussions](https://github.com/Gitmaxd/create-next-supaauth/discussions)
 
 ## 📄 License
 

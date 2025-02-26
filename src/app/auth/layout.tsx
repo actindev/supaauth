@@ -11,12 +11,20 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
     <div className="min-h-screen flex flex-col bg-transparent">
       <header className="h-16 bg-gradient-to-b from-background-dark via-background to-transparent border-b border-[#2E2E2E] shadow-[0_1px_0_0_rgba(255,255,255,0.02)] sticky top-0 z-50 backdrop-blur-sm">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="flex items-center h-full">
+          <div className="flex items-center justify-between h-full">
             <Link 
               href="/" 
-              className="text-2xl font-bold text-text whitespace-nowrap flex items-center h-full"
+              className="text-xl sm:text-2xl font-bold text-text whitespace-nowrap flex items-center h-full"
             >
               SupaAuth
+            </Link>
+            
+            {/* Mobile back button */}
+            <Link
+              href="/"
+              className="md:hidden flex items-center justify-center px-3 py-1.5 text-sm font-medium rounded-md border border-border/50 text-text-secondary hover:text-text transition-colors duration-200"
+            >
+              Back to home
             </Link>
           </div>
         </nav>
@@ -27,9 +35,9 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
       </main>
 
       {/* Fixed height footer */}
-      <footer className="h-16 bg-gradient-to-t from-background-dark via-background to-transparent border-t border-[#2E2E2E] shadow-[0_-1px_0_0_rgba(255,255,255,0.02)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
-          <p className="text-text-secondary">© {new Date().getFullYear()} SupaAuth. All rights reserved.</p>
+      <footer className="h-auto py-4 md:h-16 bg-gradient-to-t from-background-dark via-background to-transparent border-t border-[#2E2E2E] shadow-[0_-1px_0_0_rgba(255,255,255,0.02)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+          <p className="text-text-secondary text-sm text-center md:text-left">© {new Date().getFullYear()} SupaAuth. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <a
               href="https://github.com/Gitmaxd/supaauth"

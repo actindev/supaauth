@@ -89,11 +89,11 @@ export default function Home() {
         <div className="py-12 sm:py-16 dark-container">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-text">How It Works</h2>
-            <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-text-secondary max-w-2xl mx-auto px-4">
               From zero to full-stack in three easy steps
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto px-4 sm:px-6">
             <StepCard
               number="1"
               title="Run One Command"

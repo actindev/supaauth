@@ -1,4 +1,4 @@
-# create-next-supaauth
+# Next.js Supabase Auth Template
 
 <div align="center">
 
@@ -10,7 +10,6 @@ A modern, type-safe authentication boilerplate built with Next.js 14 and Supabas
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![npm version](https://img.shields.io/npm/v/create-next-supaauth.svg?style=flat)](https://www.npmjs.com/package/create-next-supaauth)
 
 </div>
 
@@ -29,35 +28,34 @@ A modern, type-safe authentication boilerplate built with Next.js 14 and Supabas
 
 ### Prerequisites
 - Node.js 16.14.0 or higher
+- npm, yarn, or pnpm
 
-### Installation
+### Setup
 
-1. Create a new project with one command:
+1. Set up environment variables:
    ```bash
-   npx create-next-supaauth my-app
+   cp .env.example .env.local
    ```
-
-2. Navigate to your project:
-   ```bash
-   cd my-app
-   ```
-
-3. Update your environment variables in `.env.local` with your Supabase credentials:
+   Then edit `.env.local` with your Supabase credentials:
    ```env
    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
    ```
 
-4. Start the development server:
+2. Start the development server:
    ```bash
    npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
    ```
 
 Visit `http://localhost:3000` to see your app in action! 🎉
 
 ## 📖 For Beginners
 
-SupaAuth is designed to be beginner-friendly while maintaining professional standards. Here's what you'll learn:
+This template is designed to be beginner-friendly while maintaining professional standards. Here's what you'll learn:
 
 ### Key Learning Points
 
@@ -82,48 +80,12 @@ src/
 └── types/                # TypeScript definitions
 ```
 
-## 🔧 For Advanced Developers
-
-### Performance Features
-
-- ⚡ Pre-configured Supabase authentication with SSR
-- 🔄 Optimized data fetching strategies
-- 🎯 Type-safe API calls
-
-### Customization
-
-1. **UI Customization**
-   - Modify Tailwind styles in `src/styles/globals.css`
-   - Update components in `src/components/layout/`
-
-2. **Route Protection**
-   - Extend protected routes in `src/middleware.ts`
-
-3. **Feature Extension**
-   - Build upon the dashboard in `src/app/dashboard/page.tsx`
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 💬 Support
-
-- 📚 [Supabase Documentation](https://supabase.io/docs)
-- 🐛 [Issue Tracker](https://github.com/Gitmaxd/create-next-supaauth/issues)
-- 💡 [Discussions](https://github.com/Gitmaxd/create-next-supaauth/discussions)
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 Made with ❤️ by <a href="https://x.com/gitmaxd" target="_blank">@GitMaxd</a>
-</div>
+</div> 

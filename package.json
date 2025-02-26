@@ -1,7 +1,35 @@
 {
   "name": "create-next-supaauth",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "description": "A CLI to create Next.js projects with Supabase authentication",
+  "private": false,
+  "bin": {
+    "create-next-supaauth": "./bin/create-next-supaauth.js"
+  },
+  "files": [
+    "bin/",
+    "template/"
+  ],
+  "keywords": [
+    "next",
+    "nextjs",
+    "supabase",
+    "authentication",
+    "auth",
+    "starter",
+    "boilerplate",
+    "template"
+  ],
+  "author": "GitMaxd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gitmaxd/create-next-supaauth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gitmaxd/create-next-supaauth/issues"
+  },
+  "homepage": "https://github.com/Gitmaxd/create-next-supaauth#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,6 +1,6 @@
 {
   "name": "create-next-supaauth",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A CLI to create Next.js projects with Supabase authentication",
   "private": false,
   "bin": {

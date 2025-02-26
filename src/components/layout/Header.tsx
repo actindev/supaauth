@@ -87,6 +87,28 @@ const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
             
             <div style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.2)', margin: '8px 0' }}></div>
             
+            {/* Deploy Button in Mobile Menu */}
+            <div className="flex flex-col gap-4">
+              <div className="text-sm font-medium uppercase tracking-wider" style={{ color: 'white' }}>
+                Deploy
+              </div>
+              <a
+                href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-4 py-2 rounded-md font-medium text-white bg-black border border-gray-800 hover:bg-gray-900 transition-colors duration-200"
+                aria-label="Deploy to Vercel"
+                onClick={onClose}
+              >
+                <svg className="h-4 w-4" viewBox="0 0 116 100" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M57.5 0L115 100H0L57.5 0Z" />
+                </svg>
+                <span>Deploy to Vercel</span>
+              </a>
+            </div>
+            
+            <div style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.2)', margin: '8px 0' }}></div>
+            
             <div className="flex flex-col gap-4">
               <div className="text-sm font-medium uppercase tracking-wider" style={{ color: 'white' }}>
                 Account
@@ -195,6 +217,22 @@ export default function Header() {
                 </svg>
               </a>
             </div>
+            <div className="h-6 w-px bg-border/50 mx-1"></div>
+            
+            {/* Deploy to Vercel Button */}
+            <a
+              href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium bg-black border border-gray-800 hover:bg-gray-900 transition-colors duration-200 text-white"
+              aria-label="Deploy to Vercel"
+            >
+              <svg className="h-3.5 w-3.5" viewBox="0 0 116 100" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M57.5 0L115 100H0L57.5 0Z" />
+              </svg>
+              <span>Deploy</span>
+            </a>
+            
             <div className="h-6 w-px bg-border/50 mx-1"></div>
             <AuthButtons />
           </div>

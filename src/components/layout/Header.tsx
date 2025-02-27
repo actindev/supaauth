@@ -5,6 +5,8 @@ import dynamic from 'next/dynamic'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { createPortal } from 'react-dom'
+// Import version from utility file
+import { APP_VERSION } from '@/lib/version'
 
 // Dynamically import AuthButtons with loading state
 const AuthButtons = dynamic(() => import('./AuthButtons'), {
@@ -194,7 +196,10 @@ export default function Header() {
               href="/" 
               className="text-2xl font-bold text-text whitespace-nowrap flex items-center h-full"
             >
-              SupaAuth
+              <div className="inline-flex items-end">
+                <span>SupaAuth</span>
+                <span className="text-xs text-gray-400 font-normal ml-1.5 mb-0.5">v{APP_VERSION}</span>
+              </div>
             </Link>
           </div>
 

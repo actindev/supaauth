@@ -34,7 +34,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "update-version": "node scripts/update-version.js",
+    "predev": "npm run update-version",
+    "prebuild": "npm run update-version"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",

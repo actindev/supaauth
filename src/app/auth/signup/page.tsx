@@ -132,7 +132,7 @@ export default function SignUp() {
               </div>
             </div>
 
-            <div className="flex items-center">
+            <div className="relative flex items-center">
               <input
                 type="checkbox"
                 checked={acceptTerms}
@@ -151,7 +151,7 @@ export default function SignUp() {
             <button
               type="submit"
               disabled={isLoading || !acceptTerms}
-              className="w-full bg-primary hover:bg-primary-dark text-white py-2.5 rounded-lg transition-colors disabled:opacity-70 disabled:hover:bg-primary flex items-center justify-center gap-2 font-medium"
+              className="relative w-full bg-primary hover:bg-primary-dark text-white py-2.5 rounded-lg transition-colors disabled:opacity-70 disabled:hover:bg-primary flex items-center justify-center gap-2 font-medium"
             >
               {isLoading ? (
                 <Loader className="animate-spin" size={20} />

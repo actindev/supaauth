@@ -1,0 +1,4 @@
+include streamlit_supaauth/frontend/build/static/css/*.css
+include streamlit_supaauth/frontend/build/static/js/*.js
+include streamlit_supaauth/frontend/build/index.html
+include streamlit_supaauth/frontend/build/manifest.json

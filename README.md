@@ -1,4 +1,4 @@
-# create-next-supaauth
+# Streamlit SupaAuth Component
 
 <div align="center">
 
@@ -6,177 +6,273 @@
 
 <br />
 
-<h3><a href="https://supaauth.com" target="_blank">View SupaAuth.com for a live demo</a></h3>
+<h3>A Streamlit component for Supabase authentication</h3>
 
 <br />
 
-## A modern, type-safe authentication boilerplate built with Next.js 14 and Supabase.
+## A modern, easy-to-use Streamlit component for Supabase authentication.
 
 <br />
 
-[![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.io/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![npm version](https://img.shields.io/npm/v/create-next-supaauth.svg?style=flat)](https://www.npmjs.com/package/create-next-supaauth)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
+[![PyPI version](https://img.shields.io/pypi/v/streamlit-supaauth.svg?style=flat)](https://pypi.org/project/streamlit-supaauth/)
 
 <br />
 
-### Ready to try it? Deploy now in seconds!
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Gitmaxd/supaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables)
 
 </div>
 
 ## ✨ Features
 
-- 🔐 Complete Server-Side authentication system with email/password
-- 🚀 Server-side rendering with Next.js 14
-- 🎨 Modern UI with Tailwind CSS
+- 🔐 Complete authentication system with email/password
+- 🚀 Easy integration with Streamlit apps
+- 🎨 Modern UI with dark/light theme support
 - 📱 Fully responsive design
-- 🔒 Protected dashboard routes
-- 🌐 Password reset with email verification
-- 💪 Type-safe code with TypeScript
+- 🔒 Secure authentication flow
+- 🌐 Password reset functionality
+- 💪 Real-time authentication state updates
 - ⚡ Powered by Supabase
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 16.14.0 or higher
+- Python 3.7 or higher
+- Streamlit
+- A Supabase project
 
 ### Installation
 
-1. Create a new project with one command:
+1. Install the component:
    ```bash
-   npx create-next-supaauth my-app
+   pip install streamlit-supaauth
    ```
 
-2. Navigate to your project:
+2. Use in your Streamlit app:
+   ```python
+   import streamlit as st
+   from streamlit_supaauth import supaauth_component
+
+   # Basic usage
+   result = supaauth_component(
+       supabase_url="your-supabase-url",
+       supabase_anon_key="your-anon-key",
+       mode="signin",  # or "signup", "reset-password"
+       theme="dark",   # or "light"
+       key="auth"
+   )
+
+   if result:
+       st.write("Authentication result:", result)
+   ```
+
+3. Set up your Supabase credentials:
    ```bash
-   cd my-app
+   # In your Streamlit secrets.toml file
+   SUPABASE_URL = "your-supabase-url"
+   SUPABASE_ANON_KEY = "your-anon-key"
    ```
 
-3. Update your environment variables in `.env.local` with your Supabase credentials:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-   ```
-
-4. Start the development server:
+4. Run your Streamlit app:
    ```bash
-   npm run dev
+   streamlit run your_app.py
    ```
 
-Visit `http://localhost:3000` to see your app in action! 🎉
+## 📖 Component Parameters
 
-### Deploy to Vercel
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `supabase_url` | str | None | Your Supabase project URL |
+| `supabase_anon_key` | str | None | Your Supabase anonymous key |
+| `mode` | str | "signin" | Authentication mode: "signin", "signup", or "reset-password" |
+| `redirect_to` | str | "/dashboard" | URL to redirect after successful authentication |
+| `theme` | str | "dark" | Component theme: "dark" or "light" |
+| `key` | str | None | Unique key for the component instance |
 
-You can deploy this project directly to Vercel with the following steps:
+## 🔄 Return Values
 
-1. Create a Supabase project at [https://supabase.com](https://supabase.com) if you haven't already.
+The component returns a dictionary with authentication results:
 
-2. Get your Supabase URL and anon key from your Supabase project dashboard.
-
-3. Click the "Deploy to Vercel" button at the top of this README or use the button below.
-
-4. In the Vercel deployment form, enter your Supabase credentials:
-   - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase project anon/public key
-
-5. Click "Deploy" and wait for the deployment to complete.
-
-### Deploy to Netlify
-
-You can also deploy this project directly to Netlify with these simple steps:
-
-1. Create a Supabase project at [https://supabase.com](https://supabase.com) if you haven't already.
-
-2. Get your Supabase URL and anon key from your Supabase project dashboard.
-
-3. Click the "Deploy to Netlify" button at the top of this README or use the button below.
-
-4. In the Netlify deployment form, enter your Supabase credentials:
-   - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase project anon/public key
-
-5. Click "Save & Deploy" and wait for the deployment to complete.
-
-<div align="center">
-  <br />
-  <p><strong>Ready to deploy? Click the button below:</strong></p>
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-  </a>
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Gitmaxd/supaauth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20Keys%20needed%20for%20Supabase%20authentication&envLink=https%3A%2F%2Fgithub.com%2FGitmaxd%2Fsupaauth%23environment-variables">
-    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
-  </a>
-  <br /><br />
-</div>
-
-Your application will be deployed and accessible through a Vercel or Netlify URL. You can then configure custom domains and other settings in your respective dashboard.
-
-## Environment Variables
-
-This project requires the following environment variables to function properly:
-
-| Variable | Description | Where to Find |
-|----------|-------------|--------------|
-| `NEXT_PUBLIC_SUPABASE_URL` | The URL of your Supabase project | Supabase Dashboard → Project Settings → API → Project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | The anonymous key for your Supabase project | Supabase Dashboard → Project Settings → API → Project API Keys → anon/public |
-
-These variables are necessary for the authentication system to communicate with your Supabase backend.
-
-## 📖 For Beginners
-
-SupaAuth is designed to be beginner-friendly while maintaining professional standards. Here's what you'll learn:
-
-### Key Learning Points
-
-- 📝 Form handling and state management
-- 🔑 Authentication flow implementation
-- 🛡️ Route protection strategies
-- 🌍 Server-side vs. client-side rendering
-- 🎨 Modern UI development with Tailwind CSS
-
-### Project Structure
-
-```
-src/
-├── app/                    # Pages and layouts
-│   ├── auth/              # Authentication pages (signin, signup, reset-password)
-│   ├── dashboard/         # Protected dashboard
-│   └── layout.tsx         # Root layout
-├── components/            # Reusable UI components
-├── contexts/              # React Context providers
-├── lib/                   # Utility functions
-├── styles/               # Global styles
-└── types/                # TypeScript definitions
+```python
+{
+    "event": "SIGNED_IN",  # Event type
+    "user": {...},         # User object from Supabase
+    "session": {...},      # Session object from Supabase
+    "timestamp": "..."     # ISO timestamp of the event
+}
 ```
 
-## 🔧 For Advanced Developers
+### Event Types
+- `SIGNED_IN` - User successfully signed in
+- `SIGNED_UP` - User successfully signed up
+- `SIGNED_OUT` - User signed out
+- `PASSWORD_RECOVERY` - Password reset email sent
 
-### Performance Features
+## 🎨 Themes
 
-- ⚡ Pre-configured Supabase authentication with SSR
-- 🔄 Optimized data fetching strategies
-- 🎯 Type-safe API calls
+The component supports two themes:
+- **Dark Theme** (`theme="dark"`) - Dark background with light text
+- **Light Theme** (`theme="light"`) - Light background with dark text
 
-### Customization
+## 🔧 Development
 
-1. **UI Customization**
-   - Modify Tailwind styles in `src/styles/globals.css`
-   - Update components in `src/components/layout/`
+To set up the development environment:
 
-2. **Route Protection**
-   - Extend protected routes in `src/middleware.ts`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gitmaxd/supaauth.git
+   cd supaauth
+   ```
 
-3. **Feature Extension**
-   - Build upon the dashboard in `src/app/dashboard/page.tsx`
+2. Install Python dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+3. Install frontend dependencies:
+   ```bash
+   cd streamlit_supaauth/frontend
+   npm install
+   ```
+
+4. Start the frontend development server:
+   ```bash
+   npm start
+   ```
+
+5. Run the example Streamlit app:
+   ```bash
+   streamlit run example_app.py
+   ```
+
+## 📦 Building for Production
+
+1. Build the frontend:
+   ```bash
+   cd streamlit_supaauth/frontend
+   npm run build
+   ```
+
+2. Update the `_RELEASE` flag in `__init__.py`:
+   ```python
+   _RELEASE = True
+   ```
+
+3. Build and upload to PyPI:
+   ```bash
+   python setup.py sdist bdist_wheel
+   twine upload dist/*
+   ```
+
+## 🔐 Environment Variables
+
+For security, store your Supabase credentials in Streamlit secrets:
+
+**`.streamlit/secrets.toml`**
+```toml
+SUPABASE_URL = "https://your-project.supabase.co"
+SUPABASE_ANON_KEY = "your-anon-key"
+```
+
+Then access them in your app:
+```python
+supabase_url = st.secrets["SUPABASE_URL"]
+supabase_anon_key = st.secrets["SUPABASE_ANON_KEY"]
+```
+
+## 📋 Example Usage
+
+Here's a complete example of using the component in a Streamlit app:
+
+```python
+import streamlit as st
+from streamlit_supaauth import supaauth_component
+
+st.set_page_config(page_title="My App", page_icon="🔐")
+
+st.title("🔐 My Secure App")
+
+# Authentication component
+auth_result = supaauth_component(
+    supabase_url=st.secrets["SUPABASE_URL"],
+    supabase_anon_key=st.secrets["SUPABASE_ANON_KEY"],
+    mode="signin",
+    theme="dark",
+    key="main_auth"
+)
+
+# Handle authentication result
+if auth_result:
+    if auth_result["event"] == "SIGNED_IN":
+        st.success(f"Welcome, {auth_result['user']['email']}!")
+        
+        # Your authenticated app content here
+        st.write("🎉 You are now logged in!")
+        st.write("User data:", auth_result["user"])
+        
+    elif auth_result["event"] == "SIGNED_UP":
+        st.info("Please check your email to verify your account.")
+        
+    elif auth_result["event"] == "PASSWORD_RECOVERY":
+        st.info("Password reset email sent!")
+else:
+    st.info("Please sign in to continue.")
+```
+
+## 🛠️ Customization
+
+The component is built with React and can be customized by modifying the source code:
+
+- **Styling**: Edit `streamlit_supaauth/frontend/src/styles.css`
+- **Components**: Modify files in `streamlit_supaauth/frontend/src/components/`
+- **Main Logic**: Update `streamlit_supaauth/frontend/src/SupaAuthComponent.tsx`
+
+## 🔍 Troubleshooting
+
+### Common Issues
+
+1. **Component not loading**: Make sure you have the correct Supabase URL and anon key
+2. **Styling issues**: Check that the CSS is properly loaded
+3. **Authentication errors**: Verify your Supabase project settings and RLS policies
+
+### Debug Mode
+
+Set `_RELEASE = False` in `__init__.py` to enable development mode with hot reloading.
 
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Streamlit](https://streamlit.io/) for the amazing framework
+- [Supabase](https://supabase.io/) for the backend-as-a-service platform
+- [React](https://reactjs.org/) for the component framework
+
+## 📞 Support
+
+- 📚 [Streamlit Documentation](https://docs.streamlit.io/)
+- 📚 [Supabase Documentation](https://supabase.io/docs)
+- 🐛 [Issue Tracker](https://github.com/Gitmaxd/supaauth/issues)
+- 💡 [Discussions](https://github.com/Gitmaxd/supaauth/discussions)
+
+---
+
+<div align="center">
+Made with ❤️ by <a href="https://x.com/gitmaxd" target="_blank">@GitMaxd</a>
+</div>
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
